@@ -2,12 +2,13 @@
   "kind": "collectionType",
   "collectionName": "users",
   "info": {
-    "name": "users"
+    "name": "users",
+    "description": "Connected chat members (one record per socket)"
   },
   "options": {
     "increments": true,
     "timestamps": true,
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "attributes": {
     "username": {

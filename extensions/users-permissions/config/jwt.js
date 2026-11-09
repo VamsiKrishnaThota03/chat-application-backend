@@ -1,3 +1,9 @@
+'use strict';
+
+if (!process.env.JWT_SECRET) {
+  throw new Error('Missing required environment variable JWT_SECRET. Copy .env.example to .env and set it.');
+}
+
 module.exports = {
-  jwtSecret: process.env.JWT_SECRET || '53f74696-1efd-4a8d-a482-1a4d90e789e6'
+  jwtSecret: process.env.JWT_SECRET,
 };

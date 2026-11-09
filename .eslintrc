@@ -1,5 +1,4 @@
 {
-  "parser": "babel-eslint",
   "extends": "eslint:recommended",
   "env": {
     "commonjs": true,
@@ -8,20 +7,32 @@
     "browser": false
   },
   "parserOptions": {
-    "ecmaFeatures": {
-      "experimentalObjectRestSpread": true,
-      "jsx": false
-    },
-    "sourceType": "module"
+    "ecmaVersion": 2020,
+    "sourceType": "script"
   },
   "globals": {
     "strapi": true
   },
   "rules": {
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "linebreak-style": ["error", "unix"],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
     "no-console": 0,
-    "quotes": ["error", "single"],
-    "semi": ["error", "always"]
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
   }
 }

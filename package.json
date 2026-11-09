@@ -1,35 +1,40 @@
 {
-  "name": "strapi-socket-backend",
+  "name": "chat-application-backend",
   "private": true,
   "version": "0.1.0",
-  "description": "A Strapi application",
+  "description": "Real-time room-based chat server (Strapi 3 + Socket.IO + MongoDB)",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "strapi": "strapi",
+    "lint": "eslint .",
+    "test": "node test/socket.test.js"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.57.1",
+    "socket.io-client": "^4.8.4"
+  },
   "dependencies": {
-    "socket.io": "^3.0.4",
-    "strapi": "3.4.0",
-    "strapi-admin": "3.4.0",
-    "strapi-connector-mongoose": "3.4.0",
-    "strapi-plugin-content-manager": "3.4.0",
-    "strapi-plugin-content-type-builder": "3.4.0",
-    "strapi-plugin-email": "3.4.0",
-    "strapi-plugin-upload": "3.4.0",
-    "strapi-plugin-users-permissions": "3.4.0",
-    "strapi-utils": "3.4.0"
+    "socket.io": "^4.8.1",
+    "strapi": "3.6.11",
+    "strapi-admin": "3.6.11",
+    "strapi-connector-mongoose": "3.6.11",
+    "strapi-plugin-content-manager": "3.6.11",
+    "strapi-plugin-content-type-builder": "3.6.11",
+    "strapi-plugin-email": "3.6.11",
+    "strapi-plugin-upload": "3.6.11",
+    "strapi-plugin-users-permissions": "3.6.11",
+    "strapi-utils": "3.6.11"
   },
   "author": {
-    "name": "A Strapi developer"
+    "name": "Vamsi Krishna Thota"
   },
   "strapi": {
     "uuid": "eeab18ab-58fc-4bd4-a6e4-08fb4ba44f1b"
   },
   "engines": {
-    "node": ">=10.16.0 <=14.x.x",
+    "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"

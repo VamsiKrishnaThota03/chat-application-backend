@@ -57,7 +57,7 @@ The Strapi app attaches a Socket.IO server to Strapi's HTTP server in `config/fu
 ### Install
 
 ```bash
-git clone https://github.com/VamsiKrishnaThota03/chat-application-backend.git
+git clone https://github.com/VamsiKrishnaThota03/realtime-chat-server.git
 cd chat-application-backend
 npm install
 ```
